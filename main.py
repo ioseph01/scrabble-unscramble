@@ -4,6 +4,7 @@ letters = 'tabind'
 
 word_dict = {}
 char_dict = Counter(letters)
+words = []
 
 with open('words.txt') as f:
     for l in f:
@@ -22,6 +23,7 @@ for i in word_dict:
                 if _ :
                     print(i)
                 print('\t',word)
+                words.append(word)
                 _ = False
 
     else:
