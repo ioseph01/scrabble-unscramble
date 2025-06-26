@@ -1,6 +1,6 @@
 from collections import Counter
 
-letters = 'tabind'
+letters = input("Enter your letters : ")
 
 word_dict = {}
 char_dict = Counter(letters)
@@ -28,6 +28,8 @@ for i in sorted(word_dict):
 
     else:
         break
+
+print("\n" + str(len(words)), " words found")
             
                 
             
