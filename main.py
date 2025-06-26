@@ -15,7 +15,7 @@ with open('words.txt') as f:
             word_dict[len(l)].append(l)
             
 
-for i in word_dict:
+for i in sorted(word_dict):
     if i <= len(letters):
         _ = True
         for word in word_dict[i]:
